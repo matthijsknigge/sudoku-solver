@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-sudoku-solver"
+version = "0.1.0"
+description = "A Python-based Sudoku solver with backtracking"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+  { name="Your Name", email="your.email@example.com" }
+]
+keywords = ["sudoku", "solver", "puzzle"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+requires-python = ">=3.7"
+dependencies = []
+
+[project.scripts]
+# This defines a command-line entry point. Example usage: `sudoku-solver path/to/puzzle.json`
+sudoku-solver = "sudoku_solver.solver:main"
